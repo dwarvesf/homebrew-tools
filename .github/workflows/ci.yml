@@ -1,0 +1,27 @@
+name: CI
+
+# Public tap: GitHub-hosted runners are free here.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  formula:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: Tap this checkout
+        run: brew tap dwarvesf/tools "$GITHUB_WORKSPACE"
+      - name: Audit
+        run: brew audit --strict --online dwarvesf/tools/share
+      - name: Install
+        run: brew install dwarvesf/tools/share
+      - name: Test
+        run: brew test dwarvesf/tools/share
