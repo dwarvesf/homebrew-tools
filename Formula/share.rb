@@ -1,8 +1,8 @@
 class Share < Formula
   desc "Publish snapshots of local files at a short link on your own domain"
   homepage "https://github.com/dwarvesf/share"
-  url "https://github.com/dwarvesf/share/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "3c1ebb35adbe9bfcc543355d955e2fad6c9d8206fdfd21fe299c9ecfd3af1c64"
+  url "https://github.com/dwarvesf/share/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "7b2d5997e1b64da915a52bcb6c5fc3895d3436c364de9e4c7e9c1c14571cba63"
   license "MIT"
   head "https://github.com/dwarvesf/share.git", branch: "main"
 
