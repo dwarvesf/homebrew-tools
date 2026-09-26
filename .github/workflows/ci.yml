@@ -25,3 +25,18 @@ jobs:
         run: brew install dwarvesf/tools/share
       - name: Test
         run: brew test dwarvesf/tools/share
+
+  cask:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: Tap this checkout
+        run: brew tap dwarvesf/tools "$GITHUB_WORKSPACE"
+      - name: Audit
+        run: brew audit --cask --strict --online dwarvesf/tools/spacedown
+      - name: Install
+        run: brew install --cask dwarvesf/tools/spacedown
+      - name: Check the app
+        run: test -d /Applications/Spacedown.app && spctl -a -vv -t exec /Applications/Spacedown.app
