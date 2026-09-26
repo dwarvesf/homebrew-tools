@@ -1,6 +1,6 @@
 cask "spacedown" do
-  version "1.0.1"
-  sha256 "32f8c4177539fd8f38309795a3250d2c435b54632dc783154be8063f23d129b9"
+  version "1.0.2"
+  sha256 "30aa969e3911921cfeae3834aa4a085aa6901fd87bef58283aecffc280a187ae"
 
   url "https://github.com/dwarvesf/spacedown/releases/download/v#{version}/Spacedown-#{version}-macos.zip"
   name "Spacedown"
