@@ -10,6 +10,11 @@ on:
 permissions:
   contents: read
 
+# brew audit --online calls the GitHub API; unauthenticated calls from shared runner
+# IPs hit the anonymous rate limit. The built-in read-only token lifts it.
+env:
+  HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   formula:
     runs-on: macos-latest
