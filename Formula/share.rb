@@ -20,6 +20,9 @@ class Share < Formula
         A browser opens for the Cloudflare login; share does the rest,
         including a login service that keeps your links up.
 
+      Menu bar app: brew install --cask dwarvesf/tools/share-bar
+        Installs Share Bar, a menu bar app that shows shares and status.
+
       Optional: brew install pandoc gh
         pandoc renders shared markdown to HTML; gh warns when a share
         comes from a private GitHub repo.
