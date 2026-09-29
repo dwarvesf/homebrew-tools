@@ -1,8 +1,8 @@
 cask "share-bar" do
-  version "0.6.0"
-  sha256 "48d9f7ab0ed15ac7f1abf9decb0a1ffcd0bc26d5cf7e11943bfcd00579f988d4"
+  version "0.7.0"
+  sha256 "593a719e229fa833931705fa3eee278e33b935460041f7b285390eefaf3341f5"
 
-  url "https://github.com/dwarvesf/share/releases/download/v0.6.0/Share-Bar-0.6.0.zip"
+  url "https://github.com/dwarvesf/share/releases/download/v0.7.0/Share-Bar-0.7.0.zip"
   name "Share Bar"
   desc "Menu bar app for share: live status, quick links, drag-to-publish"
   homepage "https://github.com/dwarvesf/share"
