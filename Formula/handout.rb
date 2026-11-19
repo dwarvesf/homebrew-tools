@@ -1,5 +1,5 @@
 class Handout < Formula
-  desc "Hand out files, folders, and dev servers at a link on your own domain"
+  desc "Publish files, folders, and dev servers at a link on your own domain"
   homepage "https://github.com/consolelabs/handout"
   url "https://github.com/consolelabs/handout/archive/refs/tags/v0.9.0.tar.gz"
   sha256 "4054d1fc62e2c9c6ea08dbe98279fee55ddb5cd02fcd775fb91986671c9d3b6e"
