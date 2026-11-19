@@ -17,7 +17,7 @@ brew install --cask dwarvesf/tools/<cask>
 | Cask | What it does |
 |---|---|
 | [handout-bar](https://github.com/consolelabs/handout) | Menu bar app for handout: live status, quick links, drag-to-publish. |
-| [spacedown](https://github.com/consolelabs/spacedown) | Quick Look preview for Markdown: press space on a `.md` file in Finder to read it rendered, math included. |
+| [spacedown](https://github.com/consolelabs/spacedown) | Moved to [consolelabs/homebrew-tap](https://github.com/consolelabs/homebrew-tap): `brew install --cask consolelabs/tap/spacedown`. `brew update` moves an existing install there (`tap_migrations.json`). |
 
 ## Releasing a new version
 
