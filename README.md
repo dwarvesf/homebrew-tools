@@ -16,7 +16,7 @@ brew install --cask dwarvesf/tools/<cask>
 
 | Cask | What it does |
 |---|---|
-| [spacedown](https://github.com/dwarvesf/spacedown) | Quick Look preview for Markdown: press space on a `.md` file in Finder to read it rendered, math included. |
+| [spacedown](https://github.com/consolelabs/spacedown) | Quick Look preview for Markdown: press space on a `.md` file in Finder to read it rendered, math included. |
 
 ## Releasing a new version
 
