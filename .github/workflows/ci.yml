@@ -24,6 +24,8 @@ jobs:
           persist-credentials: false
       - name: Tap this checkout
         run: brew tap dwarvesf/tools "$GITHUB_WORKSPACE"
+      - name: Trust this tap
+        run: brew trust dwarvesf/tools
       - name: Audit
         run: brew audit --strict --online dwarvesf/tools/share
       - name: Install
@@ -39,6 +41,8 @@ jobs:
           persist-credentials: false
       - name: Tap this checkout
         run: brew tap dwarvesf/tools "$GITHUB_WORKSPACE"
+      - name: Trust this tap
+        run: brew trust dwarvesf/tools
       - name: Audit
         run: brew audit --cask --strict --online dwarvesf/tools/spacedown
       - name: Install
