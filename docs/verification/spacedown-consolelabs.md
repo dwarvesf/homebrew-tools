@@ -10,3 +10,8 @@ Command: curl -sIL -o /dev/null -w '%{http_code}' https://github.com/consolelabs
 Exit: 0
 Output: 200
 Verdict: PASS
+
+Command: gh pr checks 31
+Exit: 0
+Output: cask pass 50s (audit, install, spctl check on the consolelabs url); formula pass 1m14s, run 44516178747 with the added `brew trust dwarvesf/tools` step
+Verdict: PASS
