@@ -8,7 +8,7 @@ brew install dwarvesf/tools/<formula>
 
 | Formula | What it does |
 |---|---|
-| [share](https://github.com/dwarvesf/share) | Publish snapshots of local files and folders at a short link on your own domain, through a Cloudflare Tunnel. |
+| [handout](https://github.com/consolelabs/handout) | Hand out files, folders, and dev servers at a link on your own domain, through a Cloudflare Tunnel. Installs `share` too, the old name. |
 
 ```sh
 brew install --cask dwarvesf/tools/<cask>
@@ -16,6 +16,7 @@ brew install --cask dwarvesf/tools/<cask>
 
 | Cask | What it does |
 |---|---|
+| [handout-bar](https://github.com/consolelabs/handout) | Menu bar app for handout: live status, quick links, drag-to-publish. |
 | [spacedown](https://github.com/consolelabs/spacedown) | Quick Look preview for Markdown: press space on a `.md` file in Finder to read it rendered, math included. |
 
 ## Releasing a new version

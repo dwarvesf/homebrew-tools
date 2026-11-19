@@ -27,11 +27,11 @@ jobs:
       - name: Trust this tap
         run: brew trust dwarvesf/tools
       - name: Audit
-        run: brew audit --strict --online dwarvesf/tools/share
+        run: brew audit --strict --online dwarvesf/tools/handout
       - name: Install
-        run: brew install dwarvesf/tools/share
+        run: brew install dwarvesf/tools/handout
       - name: Test
-        run: brew test dwarvesf/tools/share
+        run: brew test dwarvesf/tools/handout
 
   cask:
     runs-on: macos-latest
