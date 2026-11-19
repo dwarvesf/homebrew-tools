@@ -33,3 +33,6 @@ Restore: git checkout HEAD -- tap_migrations.json
 Exit: 0 (green after restore)
 Verdict: RED, as expected
 ```
+
+## Rollback
+Revert this PR: `Casks/spacedown.rb` comes back and `tap_migrations.json` goes. A user whose install `brew update` already moved stays on consolelabs/tap, which keeps working; to move back by hand: `brew uninstall --cask spacedown && brew install --cask dwarvesf/tools/spacedown`.
