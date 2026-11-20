@@ -8,7 +8,7 @@ brew install dwarvesf/tools/<formula>
 
 | Formula | What it does |
 |---|---|
-| [handout](https://github.com/consolelabs/handout) | Hand out files, folders, and dev servers at a link on your own domain, through a Cloudflare Tunnel. Installs `share` too, the old name. |
+| [handout](https://github.com/consolelabs/handout) | Moved to [consolelabs/homebrew-tap](https://github.com/consolelabs/homebrew-tap): `brew install consolelabs/tap/handout`. `brew update` moves an existing install (also one named `share`) there (`tap_migrations.json`). |
 
 ```sh
 brew install --cask dwarvesf/tools/<cask>
@@ -16,7 +16,7 @@ brew install --cask dwarvesf/tools/<cask>
 
 | Cask | What it does |
 |---|---|
-| [handout-bar](https://github.com/consolelabs/handout) | Menu bar app for handout: live status, quick links, drag-to-publish. |
+| [handout-bar](https://github.com/consolelabs/handout) | Moved to [consolelabs/homebrew-tap](https://github.com/consolelabs/homebrew-tap): `brew install --cask consolelabs/tap/handout-bar`. |
 | [spacedown](https://github.com/consolelabs/spacedown) | Moved to [consolelabs/homebrew-tap](https://github.com/consolelabs/homebrew-tap): `brew install --cask consolelabs/tap/spacedown`. `brew update` moves an existing install there (`tap_migrations.json`). |
 
 ## Releasing a new version
