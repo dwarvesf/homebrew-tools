@@ -16,20 +16,22 @@ env:
   HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  formula:
-    runs-on: macos-latest
+  # Every formula and cask moved to consolelabs/homebrew-tap; this tap keeps only the
+  # rename and migration maps, so CI checks that each map parses and points somewhere.
+  maps:
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
         with:
           persist-credentials: false
-      - name: Tap this checkout
-        run: brew tap dwarvesf/tools "$GITHUB_WORKSPACE"
-      - name: Trust this tap
-        run: brew trust dwarvesf/tools
-      - name: Audit
-        run: brew audit --strict --online dwarvesf/tools/handout
-      - name: Install
-        run: brew install dwarvesf/tools/handout
-      - name: Test
-        run: brew test dwarvesf/tools/handout
-
+      - name: Maps parse and point at a tap
+        run: |
+          python3 - <<'EOF'
+          import json
+          for f in ("tap_migrations.json", "formula_renames.json", "cask_renames.json"):
+              d = json.load(open(f))
+              assert d and all(isinstance(v, str) and v for v in d.values()), f
+          m = json.load(open("tap_migrations.json"))
+          assert all(v.startswith("consolelabs/tap") for v in m.values()), m
+          print("maps ok")
+          EOF

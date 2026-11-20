@@ -1,3 +1,7 @@
 {
-  "spacedown": "consolelabs/tap"
+  "spacedown": "consolelabs/tap",
+  "handout": "consolelabs/tap",
+  "handout-bar": "consolelabs/tap",
+  "share": "consolelabs/tap/handout",
+  "share-bar": "consolelabs/tap/handout-bar"
 }
